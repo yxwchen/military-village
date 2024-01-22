@@ -1,0 +1,112 @@
+.recipeBg {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recipeBg01 {
+    background-image: url("../images/recipe01.jpg");
+}
+
+.recipeBg02 {
+    background-image: url("../images/recipe02.jpg");
+}
+
+.recipeBg03 {
+    background-image: url("../images/recipe03.jpg");
+}
+
+.recipeBg04 {
+    background-image: url("../images/recipe04.jpg");
+}
+
+.recipeBg05 {
+    background-image: url("../images/recipe05.jpg");
+}
+
+.recipeBg06 {
+    background-image: url("../images/recipe06.jpg");
+}
+.recipeBg07 {
+    background-image: url("../images/recipe07.jpg");
+}
+.recipeBg08 {
+    background-image: url("../images/recipe08.jpg");
+}
+.recipeBg09 {
+    background-image: url("../images/recipe09.jpg");
+}
+.recipeBg10 {
+    background-image: url("../images/recipe10.jpg");
+}
+.recipeBg11 {
+    background-image: url("../images/recipe11.jpg");
+}
+.recipeBg12 {
+    background-image: url("../images/recipe12.jpg");
+}
+.recipeBg13 {
+    background-image: url("../images/recipe13.jpg");
+}
+.recipeBg14 {
+    background-image: url("../images/recipe14.jpg");
+}
+.recipeBg15 {
+    background-image: url("../images/recipe15.jpg");
+}
+.recipeBg16 {
+    background-image: url("../images/recipe16.jpg");
+}
+.recipeBg17 {
+    background-image: url("../images/recipe17.jpg");
+}
+.recipeBg18 {
+    background-image: url("../images/recipe18.jpg");
+}
+
+
+.recipe-text-wrap {
+    width: 35%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    overflow: scroll;
+    font-size: 16px;
+    line-height: 2;
+
+    @include device-md {
+        top: 60%;
+        width: 100vw;
+        height: auto;
+        background-color: #fcfcfc;
+        overflow: hidden;
+        padding: 40px 20px;
+    }
+}
+
+.recipeTwoCol {
+    display: flex;
+    justify-content: space-between;
+@include device-sm{
+    flex-direction: column;
+}
+    ul {
+        flex: 1;
+    }
+}
+
+.recipeStep li {
+    padding: 4px 0;
+}
+
+.positionLeft {
+    position: absolute;
+    left: 0;
+}
+
+.positionRight {
+    position: absolute;
+    right: 0;
+}

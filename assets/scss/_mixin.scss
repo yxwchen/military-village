@@ -1,0 +1,79 @@
+// 隱藏文字
+@mixin text-hide() {
+    text-indent: 101%;
+    overflow: hidden;
+    word-spacing: nowrap;
+}
+
+// 透明度  用法：.box {@include opacity(0.8);}
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// 清除浮動
+@mixin clearfix() {
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+// 水平居中
+@mixin horizontal-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// 最小高度   @include min-height(100px);
+@mixin min-height($height) {
+    min-height: $height;
+    height: auto !important;
+
+    @if $legacy-support-for-ie {
+        _height: $height;
+    }
+}
+
+//media query
+@mixin device-xxl {
+    @media (max-width: 1440px) {
+        @content
+    }
+}
+@mixin device-xl {
+    @media (max-width: 1200px) {
+        @content
+    }
+}
+
+@mixin device-lg {
+    @media(max-width: 992px) {
+        @content
+    }
+}
+
+@mixin device-md {
+    @media(max-width: 768px) {
+        @content
+    }
+}
+
+@mixin device-sm {
+    @media (max-width: 568px) {
+        @content
+    }
+}
+
+@mixin device-xs {
+    @media (max-width: 360px) {
+        @content
+    }
+}

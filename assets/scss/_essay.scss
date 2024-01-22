@@ -1,0 +1,197 @@
+.essayBg {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+//生活大圖
+.lifeBg01 {
+    background-image: url("../images/life01.jpg");
+}
+
+.lifeBg02 {
+    background-image: url("../images/life02.jpg");
+}
+
+.lifeBg03 {
+    background-image: url("../images/life03.jpg");
+}
+
+.lifeBg04 {
+    background-image: url("../images/life04.jpg");
+}
+
+.lifeBg05 {
+    background-image: url("../images/life05.jpg");
+}
+
+.lifeBg06 {
+    background-image: url("../images/life06.jpg");
+}
+
+.lifeBg07 {
+    background-image: url("../images/life07.jpg");
+}
+
+.lifeBg08 {
+    background-image: url("../images/life08.jpg");
+}
+
+.lifeBg09 {
+    background-image: url("../images/life09.jpg");
+}
+
+.lifeBg10 {
+    background-image: url("../images/life10.jpg");
+}
+
+.lifeBg11 {
+    background-image: url("../images/life11.jpg");
+}
+
+.lifeBg12 {
+    background-image: url("../images/life12.jpg");
+}
+
+//空間大圖
+.spaceBg01 {
+    background-image: url("../images/space01.jpg");
+}
+
+.spaceBg02 {
+    background-image: url("../images/space02.jpg");
+}
+
+.spaceBg03 {
+    background-image: url("../images/space03.jpg");
+}
+
+.spaceBg04 {
+    background-image: url("../images/space04.jpg");
+}
+
+.spaceBg05 {
+    background-image: url("../images/space05.jpg");
+}
+
+.spaceBg06 {
+    background-image: url("../images/space06.jpg");
+}
+
+.spaceBg07 {
+    background-image: url("../images/space07.jpg");
+}
+
+.spaceBg08 {
+    background-image: url("../images/space08.jpg");
+}
+
+.spaceBg09 {
+    background-image: url("../images/space09.jpg");
+}
+
+.spaceBg10 {
+    background-image: url("../images/space10.jpg");
+}
+
+.spaceBg11 {
+    background-image: url("../images/space11.jpg");
+}
+
+.spaceBg12 {
+    background-image: url("../images/space12.jpg");
+}
+
+.essay-text-wrap:not(.active) {
+    height: 10%;
+    @include device-md {
+        height: auto;
+    }
+}
+
+.essay-text-wrap {
+    transition: height 1s;
+    width: 42%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 32px 32px 0 0;
+    font-size: 16px;
+    line-height: 2;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    overflow: scroll;
+
+    @include device-md {
+        top: 85%;
+        width: 100vw;
+        height: auto;
+        background-color: #41413D;
+        bottom: auto;
+        overflow: hidden;
+        left: 0;
+    }
+}
+
+.essay-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    // position: fixed;
+    // width: 42%;
+    padding: 32px 32px 0 32px;
+
+    .essay-title {
+        width: 70%;
+        margin-right: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    h4 {
+        font-size: 32px;
+        color: $primary;
+        display: inline-block;
+        text-decoration: underline;
+        font-weight: 600;
+
+        @include device-sm {
+            font-size: 24px;
+        }
+    }
+
+    @include device-md {
+        // flex-direction: column;
+        padding: 20px 20px 0 20px;
+    }
+}
+
+.essayText-info {
+    // 測試高度先註解
+    // overflow: scroll;
+    // height: 300px;
+
+    padding: 0 32px;
+
+    @include device-md {
+        margin-bottom: 40px;
+        height: auto;
+        overflow: visible;
+    }
+}
+
+// 向下箭頭
+.essay-title span.downBtn {
+    display: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.essay-title span.upBtn {
+    // display: none;
+    &:hover {
+        cursor: pointer;
+    }
+}

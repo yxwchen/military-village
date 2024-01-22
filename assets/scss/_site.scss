@@ -1,0 +1,103 @@
+// 全站設定
+// 載入google font-Noto Serif Traditional Chinese思源宋體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&display=swap');
+
+
+body{
+    scroll-behavior: smooth;
+    font-family: "Noto Serif TC", serif;
+    line-height: 1.5;
+    font-size: $font-size-base;
+  }
+  *,*:before,*:after{
+    box-sizing: border-box;
+  }
+  img{
+      max-width: 100%;
+      height: auto;
+  }
+  a{
+      text-decoration: none;
+      transition: all .3s;
+      &:hover{
+        @include opacity(0.8);
+      }
+  }
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+// 共用類
+// 文字大小
+.font-size {
+    &-sm {
+        font-size: $font-size-sm; //14px
+    }
+    &-md{
+        font-size: $font-size-base; //16px
+    }
+    &-lg{
+        font-size: $font-size-lg; //20px
+    }
+}
+.h1{
+    font-size:$h1-font-size ;
+}
+.h2{
+    font-size:$h2-font-size ;
+}
+.h3{
+    font-size:$h3-font-size ;
+}
+.h4{
+    font-size:$h4-font-size ;
+}
+.h5{
+    font-size:$h5-font-size ;
+}
+.h6{
+    font-size:$h6-font-size ;
+}
+// 字重
+.font-weight-light{
+    font-weight: $font-weight-light;
+}
+.font-weight-normal{
+font-weight: $font-weight-normal;
+}
+.font-weight-bold{
+font-weight: $font-weight-bold;
+}
+.font-weight-bolder{
+font-weight: $font-weight-bolder;
+}
+
+/* Rules for sizing the icon. */
+// 連結對齊icon必設
+.material-icons {
+    display:inline-flex;
+    vertical-align:top;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+#cc {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,166 @@
+#section-three {
+    background-color: #FFF2D2;
+    padding-top: 35px;
+    padding-left: 53px;
+    h1 {
+        // font-family: "Noto Serif SC";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 84px;
+        @include device-md{
+            font-size: 32px;
+            margin-top: 60px;
+        }
+    }
+
+    .contain {
+        display: flex;
+        height: 90%;
+    }
+
+    .card-container {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 80%;
+        width: 50%;
+        min-width: 340px;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include device-md{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    .card-container::-webkit-scrollbar {
+        display: none;
+    }
+    .card {
+        width: 320px;
+        height: 200px;
+        left: 0px;
+        top: 0px;
+        background: #FFFFFF;
+        border-radius: 15px 5px;
+        margin: 12px 6px;
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.1));
+        padding-top: 16px;
+        padding-left: 20px;
+        z-index: 0;
+        cursor: pointer;
+        .card-location {
+            border-radius: 15px 0 0 0;
+            color: #7CC4C6;
+            // font-family: "Noto Serif SC";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            .line {
+                margin-left: 14px;
+                margin-bottom: 4px;
+                width: 208px;
+                height: 0px;
+                border-top-width: 1px;
+                border-top-style: solid;
+                border-color: #7CC4C6;
+                display: inline-block;
+            }
+        }
+        .card-title {
+            // font-family: "Noto Serif SC";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 16px;
+            width: 278px;
+            color: #7CC4C6;
+            margin-bottom: 24px;
+        }
+        .card-description {
+            width: 278px;
+            // font-family: "Noto Serif SC";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+    }
+    .card:hover {
+        z-index: 2;
+    }
+
+    .map {
+        display: inline-block;
+        position: relative;
+        margin-top: -100px;
+        width: 50%;
+        img {
+            width: auto;
+            height: 100%;
+            object-fit: contain;
+        }
+        object {
+            max-height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .dots {
+            z-index: 3;
+            display: none;
+        }
+        
+    }
+    
+    #overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 1);
+        z-index: 1;
+        opacity: .5;
+        transition: opacity 1s linear;
+ 
+    }
+    #overlay:not(.show) {
+        display: none;
+        opacity: 0;
+    }
+    @include device-md {
+        h1 {
+            margin-left: 16px;
+        }
+        .map {
+            display: none;
+        }
+        padding-left: 0px;
+        #overlay {
+            display: none;
+        }
+        .card-container {
+            overflow-y: unset;
+        }
+        .contain {
+            margin-left: 16px;
+        }
+        width: 100vw;
+        scroll-snap-align: start;
+    }
+}

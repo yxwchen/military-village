@@ -1,0 +1,50 @@
+// Color system色彩
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #f5f7fb;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #959595;
+$gray-700: #495057;
+$gray-800: #354758;
+$gray-900: #2d2929;
+$black: #000;
+
+$blue: #E5F7FD;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #FBEBEB;
+$orange: #C15655;
+$yellow: #fbf7eb;
+$green: #EBFBF7;
+$green-light: #5EA151;
+$teal: #1FB4B9;
+$cyan: #7CC4C6; //#0dcaf0
+$brown:#CDAE8B;
+
+
+
+$primary:$cyan;
+
+
+//Spacing
+
+// 字型尺寸
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1.25; //20px
+$font-size-sm: $font-size-base * .875; // 14px
+
+$h1-font-size: $font-size-base * 3.75 ; // 60px
+$h2-font-size: $font-size-base * 3 ; // 48px
+$h3-font-size: $font-size-base * 2.5 ; // 40px
+$h4-font-size: $font-size-base * 2 ; // 32px
+$h5-font-size: $font-size-base * 1.5 ; // 24px
+$h6-font-size: $font-size-base * 1.25; // 20px
+
+// 字重
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 900;

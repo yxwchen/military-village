@@ -1,0 +1,154 @@
+#section-two {
+    background-image: url(../images/white-concrete-wall.png);
+
+    .sec2back {
+        height: 100%;
+        background-image:
+            url(../svgs/flower.svg),
+            url(../svgs/flower.svg),
+            linear-gradient(90.07deg, rgba(195, 164, 128, .2) 0.06%, rgba(205, 174, 139, .2) 99.95%),
+            linear-gradient(90.07deg, rgba(205, 174, 139, 0) 0.06%, rgba(195, 164, 128, .2) 99.95%);
+        background-position: 0 0, 0 146.29px, 0 0, 0 100%;
+        background-size: auto, auto, 100% 66%, 100% 34%, ;
+        background-repeat: repeat-x, repeat-x, no-repeat, no-repeat;
+        overflow: hidden;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 1440px;
+        position: relative;
+    }
+
+    .textContext {
+        position: relative;
+        left: 135px;
+        top: 274px;
+    }
+
+    .title {
+        width: 585.35px;
+        height: 146.34px;
+    }
+
+    .context1 {
+        background: none;
+        width: 444px;
+        height: 154px;
+        margin-left: 30px;
+        margin-top: 36.66px;
+        /* 引言 */
+        font-family: Noto Serif TC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 48px;
+        /* or 240% */
+        color: #2D2929;
+    }
+
+    .suitCase {
+        position: relative;
+        top: -111px;
+        left: 695px;
+    }
+
+    .obj1 {
+        cursor: pointer;
+    }
+
+    .obj2 {
+        cursor: pointer;
+    }
+
+    .obj3 {
+        cursor: pointer;
+    }
+
+    .obj4 {
+        cursor: pointer;
+    }
+
+    .obj1Text {
+        transform: scale(0);
+
+    }
+
+    .obj2Text {
+        transform: scale(0);
+    }
+
+    .obj3Text {
+        transform: scale(0);
+    }
+
+    .textpopup1 {
+        animation: popup .1s linear forwards;
+        animation-delay: .2s;
+        transform-origin: 241px 52px;
+    }
+
+    .textpopup2 {
+        animation: popup .1s linear forwards;
+        animation-delay: .2s;
+        transform-origin: 120px 455px;
+    }
+
+    .textpopup3 {
+        animation: popup .1s linear forwards;
+        animation-delay: .2s;
+        transform-origin: 583px 352px;
+    }
+
+    @keyframes popup {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @include device-md {
+        .textContext {
+            top: 86px;
+            left: 0;
+        }
+
+        .title {
+            width: 100%;
+        }
+
+        .suitCase {
+            display: none;
+        }
+
+        .context1 {
+            height: auto;
+            width: auto;
+            margin: 0 auto;
+            padding: 0 16px;
+            @include device-md {
+                margin: 40px auto 0;
+            }
+            @include device-xs{
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // 皮箱768顯示圖 claire test
+    .section2item {
+        display: none;
+
+        @include device-md {
+            display: block;
+            width: 50%;
+            margin-top: 20px;
+            @include horizontal-center;
+            animation: itemRotate 3s linear infinite;
+        }
+    }
+
+}

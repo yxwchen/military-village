@@ -1,0 +1,151 @@
+// 參考    https://codepen.io/shiiinnooo/pen/BaKvOxa
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: top 0.3s;
+    z-index: 9999;
+
+    @include device-md {
+        top: 0px;
+    }
+
+    h1 {
+        width: 160px;
+        margin: 20px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        @include device-md {
+            /* 隱藏選單 */
+            max-height: 0px;
+            overflow: hidden;
+            /* 取消 display: flex; */
+            display: block;
+            /* 設定絕對定位 */
+            position: absolute;
+            top: 81px;
+            /* 選單滿版呈現，也可以設定 left:0; right:0; */
+            width: 100%;
+            text-align: center;
+            background: #FBFCFD;
+            transition: max-height .8s;
+        }
+        li {
+            padding: 20px;
+            @include device-lg{
+                padding: 10px;
+            }
+            @include device-md{
+                border-bottom:  1px solid $white;
+            }
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.showmenu {
+    display: none;
+
+    @include device-md {
+        display: block;
+        color: $black;
+        padding: 1em;
+        text-decoration: none;
+    }
+}
+.menu-show .menu{
+    @include device-md {
+    max-height: 500px
+    }
+  }
+
+//nav第二種型態 固定在選單上方不用滾動顯示
+.navbar-type2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: top 0.3s;
+    z-index: 99;
+
+    @include device-md {
+        top: 0px;
+    }
+
+    h1 {
+        padding: 20px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        @include device-md {
+            /* 隱藏選單 */
+            max-height: 0px;
+            overflow: hidden;
+            /* 取消 display: flex; */
+            display: block;
+            /* 設定絕對定位 */
+            position: absolute;
+            top: 81px;
+            /* 選單滿版呈現，也可以設定 left:0; right:0; */
+            width: 100%;
+            text-align: center;
+            background: #0F222B;
+            transition: max-height .8s;
+        }
+        li {
+            padding: 20px;
+            @include device-md{
+                border-bottom:  1px solid $gray-600;
+            }
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+// 主導覽新增第二層第三層架構
+
+.secondNav{
+    display: none;
+    padding: 8px 0;
+    background-color: $gray-200;
+    position: absolute;
+    right: 0;
+    top:86px;
+    width: 250px;
+    @include device-md{
+        position: static;
+        width: 100%;
+    }
+}
+.thirdNav{
+    display: none;
+    background-color: $gray-300;
+    margin: 8px 0;
+}
+.linkBtn,.storymapBtn{
+    cursor: pointer;
+}

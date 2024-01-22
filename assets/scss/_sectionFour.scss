@@ -1,0 +1,189 @@
+#section-four {
+  position: relative;
+
+  .bg1 {
+    background-image: url('/assets/images/section-four_bg01.png');
+  }
+  .bg2 {
+    background-image: url('/assets/images/section-four_bg02.png');
+  }
+  .bg3 {
+    background-image: url('/assets/images/section-four_bg03.png');
+  }
+  .bg4 {
+    background-image: url('/assets/images/section-four_bg04.png');
+  }
+  .background {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    background-size: cover;
+  }
+  .timeline01 {
+    background-image: url('/assets/images/section-four_topic01.svg');
+  }
+  .timeline02 {
+    background-image: url('/assets/images/section-four_topic02.svg');
+  }
+  .timeline03 {
+    background-image: url('/assets/images/section-four_topic03.svg');
+  }
+  .timeline04 {
+    background-image: url('/assets/images/section-four_topic04.svg');
+  }
+
+  .page {
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+  }
+
+  .bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+  }
+
+  .image {
+    height: 60vh;
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    transform-origin: center top;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    top: 10vh;
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    direction: ltr;
+    width: 100vw;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 0;
+  }
+
+  h2 {
+    top: 67vh;
+    position: absolute;
+    width: 100%;
+    font-weight: 100;
+    text-align: center;
+    color: $primary;
+    font-weight: 800;
+    font-size: 60px;
+  }
+
+  h3 {
+    position: absolute;
+    top: 131px;
+    left: 53px;
+    color: $black;
+  }
+
+  p {
+    top: 70vh;
+    position: absolute;
+    width: 100%;
+    font-weight: 100;
+    text-align: center;
+    color: $white;
+    font-size: 24px;
+    padding: 8vh;
+    padding-left: 200px;
+    padding-right: 200px;
+    box-sizing: border-box;
+
+    @include device-xl {
+      padding: 6vh;
+    }
+
+    @include device-md {
+      display: none;
+      padding: 5vh;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    // p {
+    //   padding: 50px;
+    //   top: 55vh;
+    // }
+
+    h2 {
+      top: 48vh;
+
+      @include device-xs {
+        top: 60vh;
+      }
+    }
+
+    .image {
+      top: 0vh;
+      // top:20vh;
+      @include device-xs {
+        top: 7vh;
+      }
+    }
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* font-family: 'Comfortaa', arial; */
+  }
+
+  html {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin: 0 52px;
+
+    span {
+      font-size: 72px;
+      cursor: pointer;
+    }
+  }
+
+  #right {
+    float: right;
+    margin-right: 72px;
+  }
+
+  @include device-md {
+    .controls {
+      display: none;
+    }
+  }
+}
+// 因小手機板面圖與標題位置差異過大 而新增此寫法
+@media only screen and (max-width: 320px) {
+  h2 {
+    top: 50vh;
+  }
+
+  .image {
+    top: 37vh;
+  }
+}

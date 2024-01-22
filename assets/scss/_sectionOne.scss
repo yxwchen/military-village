@@ -1,0 +1,188 @@
+$sceneTime : 8s;
+
+#section-one {
+    background-image: url(../images/white-concrete-wall.png);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    svg {
+        width: 100%;
+        position: absolute;
+        display: inline;
+        @include device-md {
+            opacity: .3;
+        }
+    }
+    @media (max-aspect-ratio: 16/9) {
+        svg {
+            width: auto;
+            height: 100%;
+            left: -600px;
+        }
+    }
+
+    .firstPass {
+        stroke-dasharray: 1000px;
+        stroke-dashoffset: 1000px;
+        animation: dash $sceneTime linear forwards;
+        animation-delay: $sceneTime * 0;
+    }
+
+    .secondPass {
+        stroke-dasharray: 1000px;
+        stroke-dashoffset: 1000px;
+        animation: dash $sceneTime linear forwards;
+        animation-delay: $sceneTime * 1 - 1;
+        animation-fill-mode: both;
+            
+    }
+
+    .thirdPass {
+        stroke-dasharray: 1000px;
+        stroke-dashoffset: 1000px;
+        animation: dash $sceneTime linear forwards;
+        animation-delay: $sceneTime * 2 - 1;
+        animation-fill-mode: both;
+    }
+
+    .forthPass {
+        stroke-dasharray: 1000px;
+        stroke-dashoffset: 1000px;
+        animation: dash $sceneTime linear forwards;
+        animation-delay: $sceneTime * 3 - 1;
+        animation-fill-mode: both;
+    }
+
+    @keyframes dash {
+        0% {
+            stroke-dashoffset: 100%;
+        }
+        60% {
+            opacity: 1;
+            stroke-dashoffset: 0;
+        }
+        100% {
+            opacity: 0;
+            stroke-dashoffset: 0;
+        }
+    }
+
+    .screenDailog {
+        z-index: 1;
+        position: absolute;
+        top: 55%;
+        left: 65%;
+        width: 400px;
+    }
+
+    .screenDailog p {
+        font-family: Noto Serif TC;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 48px;
+    }
+
+    .dia1 {
+        position: absolute;
+        top:0;
+        animation-name: fadeInAndOut;
+        animation-duration: $sceneTime;
+        animation-fill-mode: both;
+    }
+
+    .dia2{
+        position: absolute;
+        top:0;
+        animation-name: fadeInAndOut;
+        animation-delay: $sceneTime * 1;
+        animation-duration: $sceneTime;
+        animation-fill-mode: both;
+    }
+
+    .dia3{
+        position: absolute;
+        top:0;
+        animation-name: fadeInAndOut;
+        animation-delay: $sceneTime * 2;
+        animation-duration: $sceneTime;
+        animation-fill-mode: both;
+    }
+
+    .dia4{
+        position: absolute;
+        top:0;
+        animation-name: fadeIn;
+        animation-delay: $sceneTime * 3;
+        animation-duration: $sceneTime;
+        animation-fill-mode: both;
+    }
+
+    @keyframes fadeInAndOut {
+        0% {opacity: 0;}
+        40% {opacity: 1;} 
+        60% {opacity: 1;} 
+        100% {opacity: 0;}
+    }
+
+    @keyframes fadeOut {
+        0% {opacity: 1;}
+        100% {opacity: 0;} 
+    } 
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        40% {opacity: 1;} 
+        100% {opacity: 1;} 
+    } 
+
+    .dialog {
+        height: 144px;
+    }
+    .dots {
+        display: block;
+    }
+    .dot {
+        height: 8px;
+        width: 8px;
+        background-color: #2D2929;
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.2;
+        transition-property: opacity;
+        transition-duration: 1s;
+    }
+    .dotActive {
+        opacity: 1;
+    }
+    @include device-md {
+        svg {
+            //display: none;
+            height: 100vh;
+        }
+        .screenDailog {
+            top: 84px;
+            left: 0px;
+            width: 100%;
+            padding: 0 20px;
+            .dia1 {
+                animation-name: fadeIn;
+                position: unset;
+            }
+            .dia2 {
+                animation-name: fadeIn;
+                position: unset;
+            }
+            .dia3 {
+                animation-name: fadeIn;
+                position: unset;
+            }
+            .dia4 {
+                animation-name: fadeIn;
+                position: unset;
+            }
+        }
+        .dots {
+            display: none;
+        }
+    }
+}

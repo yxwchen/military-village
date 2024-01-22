@@ -1,0 +1,250 @@
+//01國防部
+.informationBg01 {
+    width: 100%;
+    height: 100vh;
+    //背景縮寫技巧  漸層：(角度，背景色，第一個漸層色空間，第二個漸層色空間) background-position / 漸層寬高;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-01.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+        // 縮小上方背景，因效果不佳改成上面放一張圖片，若確認ＯＫ以下可刪除
+        //     height: 100%;
+        //     background: linear-gradient(10deg, $gray-200 80%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        // url("../images/informationBg-01.jpg") center center / auto 100%;
+    }
+}
+
+//02富台新村-台北市城市發展交流促進會
+.informationBg02 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-02a.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+//03勝利不廢
+.informationBg03 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-03a.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    // 設定圖片定位
+    @include device-xxl {
+        background-position: 0% 50%;
+    }
+
+    @include device-xl {
+        background-position: 0% 50%;
+    }
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+//04台北市眷村心文化協會
+.informationBg04 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-04.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+//05台南市文化資產關懷志工 陸嘉社區
+.informationBg05 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-05a.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+//06新北市五股區陸一社區發展協會
+.informationBg06 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-06a.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+//07禾藝藝術創意有限公司 新竹空軍眷村
+.informationBg07 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-07.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+//08 講台文化有限公司 婦聯會眷村
+.informationBg08 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-08.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+//09 花蓮市民生社區發展協會
+.informationBg09 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-09a.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+//10 蒲公英文教教基金會
+.informationBg10 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, $gray-200 50%, transparent 50%) center center / 100% 100%, //多重背景寫法  url(背景連結) background-position /圖片寬高
+        url("../images/informationBg-10a.jpg") center center / auto 100%;
+    background-repeat: no-repeat;
+
+    @include device-md {
+        height: 100%;
+        background: none;
+    }
+}
+
+.infoContainer {
+    width: 100%;
+    max-width: 1280px; //RWD 偷懶方式
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include device-md {
+        padding: 20px;
+    }
+
+    //background-color: #fcc;
+
+    // @include device-lg {
+    //     max-width: 992px;
+    // }
+
+    // @include device-md {
+    //     max-width: 768px;
+    // }
+
+}
+
+.informationText-info {
+    overflow: scroll;
+    margin-bottom: 100px;
+    @include device-md{
+        margin-bottom: 40px; 
+    }
+}
+
+.informationText {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; //主軸
+    padding-top: 40px;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 2;
+
+    @include device-md {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    h1 {
+        font-size: 50px;
+        border-bottom: 1px solid #000;
+
+        small {
+            display: block;
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+
+        // font-size: 18px;
+        // line-height: 1.8;
+        // @include device-lg{
+        //     font-size: 16px;
+        //     line-height: 1.5;
+        // }
+        @include device-md {
+            font-size: 16px;
+            line-height: 2;
+        }
+    }
+
+}
+
+.information-sm-img {
+    display: none;
+
+    @include device-md {
+        display: block;
+    }
+}
+
+.infoBtnWrap {
+    padding: 20px 0;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    @include device-md {
+        position: static;
+    }
+a:first-child{
+    margin-right: 20px;
+}
+
+}

@@ -1,0 +1,86 @@
+.figure-wrap{
+    display: flex;
+    @include device-md{
+        flex-direction: column;
+    }
+}
+.figureBg{
+    width: 50vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:end;
+    @include device-md{
+        width: 100vw;
+        height: 70vh;
+        position: relative;
+    }
+}
+.figure-text-wrap{
+    width: 50vw;
+    height: 100vh;
+    font-size: 16px;
+    line-height: 2;
+    background-color: #EaE1D6;
+    padding: 90px 60px 0 0;
+    overflow: scroll;
+    @include device-md{
+        width: 100vw;
+        height: auto;
+        padding: 0 20px 20px 20px ;
+    }
+}
+.imgCover{
+    height: 100%;
+    @include device-md{
+        display: none;
+    }
+}
+.figureTopCover{
+    display: none;
+    @include device-md{
+        display: block;
+        height: 70px;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.figureBg01 {
+    background-image: url("../images/figure01.jpg");
+}
+.figureBg02 {
+    background-image: url("../images/figure02.jpg");
+}
+.figureBg03 {
+    background-image: url("../images/figure03.jpg");
+}
+.figureBg04 {
+    background-image: url("../images/figure04.jpg");
+}
+.figureBg05 {
+    background-image: url("../images/figure05.jpg");
+}
+.figureBg06 {
+    background-image: url("../images/figure06.jpg");
+}
+.figureBg07 {
+    background-image: url("../images/figure07.jpg");
+}
+.figureBg08 {
+    background-image: url("../images/figure08.jpg");
+}
+.figureBg09 {
+    background-image: url("../images/figure09.jpg");
+}
+.figureBg10 {
+    background-image: url("../images/figure10.jpg");
+}
+.figureBg11 {
+    background-image: url("../images/figure11.jpg");
+}
+.figureBg12 {
+    background-image: url("../images/figure12.jpg");
+}

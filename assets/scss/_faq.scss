@@ -1,0 +1,139 @@
+
+    .faqBg {
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../images/sectionSixBg.png");
+    }
+    // 影片跟faq的title
+    .pageTitle {
+        font-size: 48px;
+        text-align: center;
+        font-weight: bold;
+        padding: 104px 0 20px 0;
+    
+        @include device-md {
+            font-size: 32px;
+            margin: 0 28px;
+        }
+    }
+    
+    .faq-container {
+        max-width: 1400px;
+        padding: 0 20px;
+        // background-color:blue;
+        height: 75vh;
+        overflow:scroll;
+        @include horizontal-center;
+    
+        @include device-xxl {
+            max-width: 1320px;
+        }
+    
+        @include device-xl {
+            max-width: 1140px;
+        }
+    
+        @include device-lg {
+            max-width: 960px;
+        }
+    
+        @include device-md {
+            max-width: 720px;
+        }
+    
+        @include device-sm {
+            max-width: 540px;
+        }
+    }
+    
+    /* Accordion styles */
+    .faqTabs {
+        //overflow: scroll;
+        //height: 100vh;
+        //background-color: #faa;
+    
+        @include device-md {
+            //overflow: hidden;
+            height: 100%;
+        }
+    }
+    
+    .faqTab {
+        width: 100%;
+        color: $black;
+        overflow: hidden;
+        margin-bottom: 20px;
+    
+        &-label {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            background: $white;
+            border-top: 2px solid $brown;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all .5s ease;
+            /* Icon */
+            &:hover {
+                background: lighten($brown,10%);
+            }
+    
+            &::after {
+                content: "\276F";
+                color:$brown;
+                width: 1em;
+                height: 1em;
+                text-align: center;
+                transition: all .35s;
+            }
+        }
+    
+        &-content {
+            max-height: 0;
+            padding: 0 1em;
+            color: $black;
+            background: white;
+            transition: all .35s;
+        }
+    
+        &-close {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+            font-size: 0.75em;
+            background: $primary;
+            cursor: pointer;
+    
+            &:hover {
+                background: $brown;
+            }
+        }
+    }
+    
+    //隱藏radio
+    input[type="radio"] {
+        //position: absolute;
+        opacity: 0;
+        z-index: -1;
+        display: none;
+    }
+    
+    // :checked
+    input:checked {
+        +.faqTab-label {
+            border-top: 2px solid $brown;
+            background:lighten($brown,10%);
+    
+            &::after {
+                transform: rotate(90deg);
+            }
+        }
+    
+        ~.faqTab-content {
+            max-height: 100vh;
+            padding: 1em;
+        }
+    }
