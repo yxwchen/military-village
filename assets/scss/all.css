@@ -716,16 +716,16 @@ ol {
   position: relative;
 }
 #section-four .bg1 {
-  background-image: url("/assets/images/section-four_bg01.png");
+  background-image: url("../../assets/images/section-four_bg01.png");
 }
 #section-four .bg2 {
-  background-image: url("/assets/images/section-four_bg02.png");
+  background-image: url("../../assets/images/section-four_bg02.png");
 }
 #section-four .bg3 {
-  background-image: url("/assets/images/section-four_bg03.png");
+  background-image: url("../../assets/images/section-four_bg03.png");
 }
 #section-four .bg4 {
-  background-image: url("/assets/images/section-four_bg04.png");
+  background-image: url("../../assets/images/section-four_bg04.png");
 }
 #section-four .background {
   width: 100vw;
@@ -735,16 +735,16 @@ ol {
   background-size: cover;
 }
 #section-four .timeline01 {
-  background-image: url("/assets/images/section-four_topic01.svg");
+  background-image: url("../../assets/images/section-four_topic01.svg");
 }
 #section-four .timeline02 {
-  background-image: url("/assets/images/section-four_topic02.svg");
+  background-image: url("../../assets/images/section-four_topic02.svg");
 }
 #section-four .timeline03 {
-  background-image: url("/assets/images/section-four_topic03.svg");
+  background-image: url("../../assets/images/section-four_topic03.svg");
 }
 #section-four .timeline04 {
-  background-image: url("/assets/images/section-four_topic04.svg");
+  background-image: url("../../assets/images/section-four_topic04.svg");
 }
 #section-four .page {
   flex-shrink: 0;
@@ -1594,16 +1594,16 @@ ol {
   position: relative;
 }
 #section-four .bg1 {
-  background-image: url("/assets/images/section-four_bg01.png");
+  background-image: url("../../assets/images/section-four_bg01.png");
 }
 #section-four .bg2 {
-  background-image: url("/assets/images/section-four_bg02.png");
+  background-image: url("../../assets/images/section-four_bg02.png");
 }
 #section-four .bg3 {
-  background-image: url("/assets/images/section-four_bg03.png");
+  background-image: url("../../assets/images/section-four_bg03.png");
 }
 #section-four .bg4 {
-  background-image: url("/assets/images/section-four_bg04.png");
+  background-image: url("../../assets/images/section-four_bg04.png");
 }
 #section-four .background {
   width: 100vw;
@@ -1613,16 +1613,16 @@ ol {
   background-size: cover;
 }
 #section-four .timeline01 {
-  background-image: url("/assets/images/section-four_topic01.svg");
+  background-image: url("../../assets/images/section-four_topic01.svg");
 }
 #section-four .timeline02 {
-  background-image: url("/assets/images/section-four_topic02.svg");
+  background-image: url("../../assets/images/section-four_topic02.svg");
 }
 #section-four .timeline03 {
-  background-image: url("/assets/images/section-four_topic03.svg");
+  background-image: url("../../assets/images/section-four_topic03.svg");
 }
 #section-four .timeline04 {
-  background-image: url("/assets/images/section-four_topic04.svg");
+  background-image: url("../../assets/images/section-four_topic04.svg");
 }
 #section-four .page {
   flex-shrink: 0;
