@@ -2,17 +2,21 @@
   position: relative;
 
   .bg1 {
-    background-image: url('/assets/images/section-four_bg01.png');
+    background-image: url('../../assets/images/section-four_bg01.png');
   }
+
   .bg2 {
-    background-image: url('/assets/images/section-four_bg02.png');
+    background-image: url('../../assets/images/section-four_bg02.png');
   }
+
   .bg3 {
-    background-image: url('/assets/images/section-four_bg03.png');
+    background-image: url('../../assets/images/section-four_bg03.png');
   }
+
   .bg4 {
-    background-image: url('/assets/images/section-four_bg04.png');
+    background-image: url('../../assets/images/section-four_bg04.png');
   }
+
   .background {
     width: 100vw;
     height: 100vh;
@@ -20,17 +24,21 @@
     left: 0;
     background-size: cover;
   }
+
   .timeline01 {
-    background-image: url('/assets/images/section-four_topic01.svg');
+    background-image: url('../../assets/images/section-four_topic01.svg');
   }
+
   .timeline02 {
-    background-image: url('/assets/images/section-four_topic02.svg');
+    background-image: url('../../assets/images/section-four_topic02.svg');
   }
+
   .timeline03 {
-    background-image: url('/assets/images/section-four_topic03.svg');
+    background-image: url('../../assets/images/section-four_topic03.svg');
   }
+
   .timeline04 {
-    background-image: url('/assets/images/section-four_topic04.svg');
+    background-image: url('../../assets/images/section-four_topic04.svg');
   }
 
   .page {
@@ -133,6 +141,7 @@
 
     .image {
       top: 0vh;
+
       // top:20vh;
       @include device-xs {
         top: 7vh;
@@ -177,6 +186,7 @@
     }
   }
 }
+
 // 因小手機板面圖與標題位置差異過大 而新增此寫法
 @media only screen and (max-width: 320px) {
   h2 {
